@@ -1,0 +1,180 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:-20px;
+    font-family: 'Raleway', sans-serif;
+    background-color:darkgrey;
+}
+/*header*/
+header {
+    text-align: center;
+    padding:20px;
+}
+
+#title a{
+    color:black;
+}
+div#wrapper{
+    background-color:white;
+}
+
+.container{
+    background-color:darkgrey;
+}
+/*Navigatie bar*/
+nav{
+    background-color:black;
+    padding:5px;
+}
+li{
+    padding:10px;
+}
+ul{
+    list-style-type: none;
+    padding-left:0;
+}
+
+#navbar a:hover{
+    color:grey;
+}
+li a:visited{
+    color:white;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+
+
+/*Artikel*/
+article{
+    background-color:white;
+    border-left: 12px solid darkgrey;
+    border-right:12px solid darkgrey;
+    border-top:6px solid darkgrey;
+    border-bottom:6px solid darkgrey;
+    width:100%;
+    float:left;
+    padding:6%;
+}
+a#lees{ /*verder lezen knoppen*/
+    background-color:red;
+    padding: 10px 20px;
+    color:white;
+}
+a#lees:hover{ /*effect wanneer muis over knop gaat*/
+    background-color:darkred;
+}
+.line{ /*lijn tussen lezen en nieuws*/
+    width: 310px;
+    height: 47px;
+    border-bottom: 1px solid darkgrey;
+}
+#nieuws a{
+    color:red;
+}
+#berichten a{
+    color:red;
+}
+.fa-folder{
+    color:grey;
+}
+
+img {
+    width: 100%;
+}
+
+.pep{ /*Grijs maken van alles wat grijs moet zijn*/
+    color:darkgrey;
+}
+
+/*Volgende artikel link*/
+.volgende{
+    color:grey;
+    text-align: right;
+}
+.volgende h3{
+    color:black;
+}
+/*Tablet*/
+@media all and (min-width:750px){
+    ul{
+        color:black;
+    }
+    li{
+        display:inline-block;
+        border:none;
+    }
+    article{
+        width: 50%;
+        float:left;
+    }
+    #artikel5{
+        width:100%;
+    }
+    #artikel6{
+        width:100%;
+    }
+}
+
+/*DESKTOP*/
+@media all and (min-width:1100px) {
+    header {
+        text-align: left;
+        padding: 20px;
+
+    }
+
+    ul {
+        position:center;
+        color: black;
+    }
+
+    li {
+        display: inline-block;
+        border: none;
+
+    }
+    section{
+        display:inline-block;
+        width: 25%;
+    }
+    section#links {
+        width: 80%;
+        float: left;
+    }
+
+    section#right {
+        float: right;
+        margin-left:-300px;
+    }
+
+    #artikel5, #artikel6 {
+        width: 100%;
+    }
+
+    article {
+        display: inline-block;
+        width: 45%;
+        margin-right: 0px;
+
+    }
+
+    article:nth-child(even) {
+        margin-right: 1px;
+        margin-left: 0px
+    }
+
+
+}
+
+
+
